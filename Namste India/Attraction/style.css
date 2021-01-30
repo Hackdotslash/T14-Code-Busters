@@ -10,7 +10,7 @@
 }
 html, body {
   height: 100%;
-  background-color: rgb(59, 64, 70);
+  background-color:rgb(235, 250, 248);
 }
 .outing {
   display: grid;
@@ -18,7 +18,7 @@ html, body {
   
 }
 .text{
-  color: aliceblue;
+  color: rgb(17, 24, 31);
   font-family: var(--font-sans);
   margin-left: 42%;
 
@@ -221,7 +221,7 @@ html, body {
   }
 }
 .back{
-  color: antiquewhite;
+  color: rgb(32, 29, 24);
   
   margin-left: 20px;
 }
