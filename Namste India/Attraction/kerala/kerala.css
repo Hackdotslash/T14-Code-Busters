@@ -1,0 +1,275 @@
+body 
+{
+  margin: 0;
+  font-family: 'Droid Serif', serif;
+  background:url(https://i.pinimg.com/originals/01/59/5c/01595c46a42f205a1c6a478eef7b16fa.jpg)center top no-repeat fixed;
+  background-size:cover;
+  padding-top: 0%;
+  width: 100%;
+}
+a 
+{
+  color: #000;
+}
+
+/* header */
+
+.header 
+{
+  width: 100%;
+  z-index: 100;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background:rgba(255, 255, 255, 0.09);
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size:16px;
+  transition:0.5s ease;
+  color:#fff;
+  letter-spacing:1px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover 
+{ 
+  color: black;
+  background:white;
+}
+
+.header .logo 
+{
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  line-height: 15px;
+  text-decoration: none;
+  transition:0.4s ease;
+  color:#fff;
+
+}
+.header .logo:hover
+{
+	color: black;
+  transform:scale(1.1);
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+  text-align:center;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}    
+
+.quote-box
+{
+	text-align: center;
+    padding: 8em 6em 2em 6em;
+}   	
+.quote-text
+{
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 479px)
+{
+    .search-box 
+    { 
+    	width: 60%;
+    }
+}
+.search-text
+{
+	font-size: 100%;
+	padding: 5px;
+	margin: 0;
+}
+.search-btn
+{
+	background-color: #286090;
+	padding: 2px 1em;
+	color: #fff;
+	width: 7em;
+}
+
+.row {
+  display: block;
+   width: 100%; 
+}
+.container 
+{
+	padding: 2em 14%;
+}
+.left {
+  float: left;
+  margin: 2em 4% 2em 0;
+}
+.right {
+    float: right;
+    margin: 2em 0 2em 4%;
+}
+.headings
+{
+	font-style: italic;
+}
+.read-more
+{
+	font: 14px Montserrat,sans-serif;
+    letter-spacing: 2px;
+    color: #000;
+    background: transparent;
+    display: inline-block;
+    padding: 9px 2em;
+    transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+	border:none;
+	box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.5), 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+.read-more:hover, .read-more:focus, .read-more:active{
+
+	outline: none!important;
+}
+
+.read-more:hover
+{
+	background:#222;
+	color:#fff;
+}
+.box-text
+{
+	text-align: justify;
+}
+
+.footer-distributed
+{
+	background-color: #85b6e7;
+    text-align: left;
+    font-weight: bolder;
+	font: normal 16px sans-serif;
+	
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+.row
+{
+  padding: 0 15%;
+}
