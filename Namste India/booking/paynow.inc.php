@@ -29,7 +29,7 @@
         $query = mysqli_query($conn, "SELECT * FROM  booked WHERE username='$username' AND state='$state' AND vehChoose='$veh' AND hotelChoose='$hotel AND totalFare='$total' AND date='$date' ;");
         $row = mysqli_fetch_assoc($query);
         $id = $row["bookId"];
-        // header("Location: confirmpay.php?id=$id");
-        // exit();
+        header("Location: stripe_php_payment_gateway/index.php?id=$id");
+        exit();
     
 ?>
