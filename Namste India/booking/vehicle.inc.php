@@ -10,7 +10,7 @@
         $state = $_GET["state"];
         
 
-        header("Location: detail.php?day=$pay&veh=$veh&hotel=$hotel&state=$state&tour=$tcount&count=0");
+        header("Location: detail.php?day=$pay&vehicle=$veh&hotel=$hotel&state=$state&tour=$tcount&count=0");
         exit();
         
     }else{

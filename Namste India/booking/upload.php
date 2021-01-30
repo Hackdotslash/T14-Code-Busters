@@ -52,12 +52,16 @@ if(isset($_POST['submit'])) {
                 mysqli_stmt_bind_param($stmt, "sssssssss", $fname, $lname, $email, $contact, $gender, $dob, $dDate, $fileNameNew, $ID );
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_close($stmt);
-
+                $veh = $_GET["vehicle"];
+                $hotel = $_GET["hotel"];
+                $pay = $_GET["day"];
+                $state = $_GET["state"];
                 if($curr==$count){
-                    header("Location: paynow.php");
+                    header("Location: paynow.inc.php?&day=$pay&vehicle=$veh&hotel=$hotel&state=$state&tour=$count");
                     exit();
                 }
-                header("Location: detail.php?count=$curr&tour=$count");
+                
+                header("Location: detail.php?count=$curr&tour=$count&day=$pay&vehicle=$veh&hotel=$hotel&state=$state");
             }else{
                 echo "File Size too big!";
             }

@@ -13,9 +13,17 @@
 </head>
 <body>
     <?php $tCount = $_GET["tour"];
-        $curr = $_GET["count"]; ?>
+        $curr = $_GET["count"]; 
+        $veh = $_GET["vehicle"];
+        $hotel = $_GET["hotel"];
+        $pay = $_GET["day"];
+        $state = $_GET["state"];
+        
+        
+        ?>
+
     <h2>If found covid positive, YOUR BOOKING WILL BE CANCELLED</h2>
-    <form action="<?php echo "upload.php?tour=$tCount&count=$curr"?>" method="POST" enctype="multipart/form-data">
+    <form action="<?php echo "upload.php?tour=$tCount&count=$curr&day=$pay&vehicle=$veh&hotel=$hotel&state=$state";?>" method="POST" enctype="multipart/form-data">
         <?php
         
         for($i=$curr;$i<($curr+1) and $i<$tCount;$i++){
@@ -39,11 +47,19 @@
         <input type="text" placeholder="ID (adhar/passport)" name="ID"><br>
         <label for="file2">Upload COVID report latest by 1 week</label>
         <input id = "file2" type="file" name="file"><br>
-        <button type="submit" name="submit">NEXT</button>
         <?php
+            if($j == $tCount){
+                ?>
+                <button type="submit" name="submit">PAY NOW</button>
+                <?php
+            }else{
+                ?>
+                 <button type="submit" name="submit">NEXT</button>
+                <?php
+            }
         }
         ?>
-        <button type="submit" name="submit">PAY NOW</button>
+
 </form>
     
 </body>
