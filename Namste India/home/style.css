@@ -2,7 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /********** Global Styles ***********/
-
+.signUp {
+    margin-top: 20px ;
+    margin-left: 0px;
+    float: left;
+    color:white;
+}
+.signUp i{
+    
+    font-size:60px;
+    color: white;
+}
 *{
     margin: 0;
     padding: 0;
