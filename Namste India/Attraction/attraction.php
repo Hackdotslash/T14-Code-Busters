@@ -56,8 +56,8 @@
         </div>
         <div class="card">
             <div class="content">
-                <h2 class="title">Andaman and Nicobar Islands</h2>
-                <p class="copy">The Andaman and Nicobar Islands,  572 of them islands of which 38 are of the Bay of Bengal and the Andaman Sea.</p><a href="https://www.google.co.in/maps/place/Sarthana+Nature+Park+And+Zoo/@21.2303193,72.896579,17z/data=!3m1!4b1!4m5!3m4!1s0x3be04f5f3b387bb5:0x261e733c27afa7d2!8m2!3d21.2303193!4d72.8987677" target="_blank"><button class="btn">Explore</button></a>
+                <h2 class="title">Goa</h2>
+                <p class="copy">The Andaman and Nicobar Islands,  572 of them islands of which 38 are of the Bay of Bengal and the Andaman Sea.</p><a href="../Attraction/andaman/andaman.php?state=Goa" target="_blank"><button class="btn">Explore</button></a>
             </div>
         </div>
         <div class="card">

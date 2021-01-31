@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head> 
@@ -42,7 +44,6 @@
           <li><a href="../../home/index.php">Home</a></li>
           <li><a href="../../Covid_guide/ilovepdf_merged (4).pdf" target="_blank">Guidlines_covid</a></li>
           <li><a href="../attraction.php">Attraction</a></li>
-
           <li><a href="../../covidFeedback/index.php">comparison</a></li>
           <li><a href="../../contact/contact.php">About Us</a></li>
         </ul>
@@ -77,7 +78,7 @@
 <img class="left" src="https://ihpl.b-cdn.net/pictures/tourgallery/175/romantic-goa-honeymoon-tour-7905.jpg" width="350" height="250"/>
   <h1 class="headings">romantic-goa-honeymoon-tour</h1>
   <p class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis magna nunc, a condimentum mauris ultrices vel. Pellentesque lobortis, neque ut rutrum vehicula, turpis quam tincidunt nisl, a placerat est justo vitae nibh. Fusce eleifend varius lorem et vulputate. Nullam pellentesque metus eros, et pretium mauris placerat nec. Suspendisse at est at enim condimentum dapibus. Vivamus eu cursus tellus, nec aliquam sapien.</p>
-      <a href="../../booking/plans.php?state=Kerela">
+      <a href="../../booking/plans.php?state=Goa">
         <button class="read-more" >Book_Now Hurry!</button>
       </a>
     <div style="clear: both"></div>      
