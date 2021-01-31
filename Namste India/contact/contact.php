@@ -198,7 +198,7 @@ header {
             <li><a href="../Attraction/attraction.php">Attractions</a></li>
 
             <li><a href="../Covid_guide/ilovepdf_merged (4).pdf" target="_blank">Guidlines_covid</a></li>
-            <li><a href="../covidFeedback.php">comparison</a></li>
+            <li><a href="../covidFeedback/index.php">comparison</a></li>
           </ul>
         </div>
       </nav>

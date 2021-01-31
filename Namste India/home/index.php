@@ -34,9 +34,9 @@ session_start();
           <li><a href="#packages">Tours</a></li>
           <li><a target="_blank" href="../Covid_guide/ilovepdf_merged (4).pdf">Guidlines_covid</a></li>
           <li><a href="../Attraction/attraction.php">Attractions</a></li>
-          <li><a href="../flight_booking/flight.php"></a>Book Your Flight</li>
+          <li><a href="../flight_booking/flight.php">Book Your Flight</a></li>
           <li><a href="../covidFeedback/index.php">comparison</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="../contact/contact.php">About Us</a></li>
         </nav>
       </header>
       

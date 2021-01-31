@@ -171,7 +171,7 @@
         
     </main>
 </div>
-<a class="left" href="../home/index.html"><i class="fa fa-arrow-left back" aria-hidden="true"><br>Back</i></a>
+<a class="left" href="../home/index.php"><i class="fa fa-arrow-left back" aria-hidden="true"><br>Back</i></a>
 
 </body>
 </html>
