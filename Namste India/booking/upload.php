@@ -18,6 +18,7 @@ if(isset($_POST['submit'])) {
     $dob = $_POST["dob"];
     $dDate = $_POST["dDate"];
     $ID = $_POST["ID"];
+    $bookId = $_GET["bookId"];
     
 
     $file = $_FILES["file"];
@@ -41,15 +42,16 @@ if(isset($_POST['submit'])) {
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
 
-                $sql =  "INSERT INTO  tourinfo (fName, lName, emailId, contact, gender, dob, dDate,fileCovid, aadharId) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+                $sql =  "INSERT INTO  tourinfo (fName, lName, emailId, contact, gender, dob, dDate,fileCovid, aadharId, payId) VALUES ( ?, ?, ?,?, ?, ?, ?, ?, ?, ?);";
                 $stmt = mysqli_stmt_init($conn);
 
                 if(!mysqli_stmt_prepare($stmt, $sql)){
-                    header("location: semester.html?error=stmtfailed1");
+                    $curr--;
+                    header("location: detail.php?count=$curr&tour=$count&error=stmtfailed1");
                     exit();
                 }
 
-                mysqli_stmt_bind_param($stmt, "sssssssss", $fname, $lname, $email, $contact, $gender, $dob, $dDate, $fileNameNew, $ID );
+                mysqli_stmt_bind_param($stmt, "ssssssssss", $fname, $lname, $email, $contact, $gender, $dob, $dDate, $fileNameNew, $ID, $bookId );
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_close($stmt);
                 $veh = $_GET["vehicle"];
@@ -57,7 +59,7 @@ if(isset($_POST['submit'])) {
                 $pay = $_GET["day"];
                 $state = $_GET["state"];
                 if($curr==$count){
-                    header("Location: paynow.inc.php?&day=$pay&vehicle=$veh&hotel=$hotel&state=$state&tour=$count");
+                    header("Location: paynow.inc.php?&day=$pay&vehicle=$veh&hotel=$hotel&state=$state&tour=$count&bookId=$bookId");
                     exit();
                 }
                 

@@ -18,12 +18,13 @@
         $hotel = $_GET["hotel"];
         $pay = $_GET["day"];
         $state = $_GET["state"];
+        $bookId =uniqid();
         
         
         ?>
 
     <h2>If found covid positive, YOUR BOOKING WILL BE CANCELLED</h2>
-    <form action="<?php echo "upload.php?tour=$tCount&count=$curr&day=$pay&vehicle=$veh&hotel=$hotel&state=$state";?>" method="POST" enctype="multipart/form-data">
+    <form action="<?php echo "upload.php?tour=$tCount&count=$curr&day=$pay&vehicle=$veh&hotel=$hotel&state=$state&bookId=$bookId";?>" method="POST" enctype="multipart/form-data">
         <?php
         
         for($i=$curr;$i<($curr+1) and $i<$tCount;$i++){

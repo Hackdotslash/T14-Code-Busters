@@ -49,7 +49,7 @@
         <div class="card">
             <div class="content">
                 <h2 class="title">Kerala</h2>
-                <p class="copy">Kerala is a state on the southwestern Malabar Coast of India. It was formed on 1 November 1956,  the passage of the States Reorganisation Act</p><a href="../Attraction/kerala/kerala.html" ><button class="btn">Explore</button></a>
+                <p class="copy">Kerala is a state on the southwestern Malabar Coast of India. It was formed on 1 November 1956,  the passage of the States Reorganisation Act</p><a href="../Attraction/kerala/kerala.php?state=Kerela" ><button class="btn" >Explore</button></a>
             </div>
         </div>
         <div class="card">

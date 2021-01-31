@@ -77,8 +77,8 @@
     <img class="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvykhWos2NQaNYbu5G5oOrt0_zLVycYmGM3g&usqp=CAU" width="350" height="250"/>
         <h1 class="headings">Houseboat in Kerala</h1>
         <p class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis magna nunc, a condimentum mauris ultrices vel. Pellentesque lobortis, neque ut rutrum vehicula, turpis quam tincidunt nisl, a placerat est justo vitae nibh. Fusce eleifend varius lorem et vulputate. Nullam pellentesque metus eros, et pretium mauris placerat nec. Suspendisse at est at enim condimentum dapibus. Vivamus eu cursus tellus, nec aliquam sapien.</p>
-            <a href="#">
-        <button class="read-more">Book_Now Hurry!</button>
+            <a href="../../booking/plans.php?state=Kerela">
+              <button class="read-more" >Book_Now Hurry!</button>
             </a>
           <div style="clear: both"></div>      
       </div>
