@@ -8,7 +8,7 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: welcome.php");
+    header("Location: ../home/index.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['uid'] = $row["id"];
 		$_SESSION['username'] = $row['username'];
-		header("Location: welcome.php");
+		header("Location: ../home/index.php");
 	} else {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
 	}

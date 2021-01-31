@@ -17,7 +17,17 @@ session_start();
 
       <header>
         <div class="signUp">
-          <a href="../loginsystem/index.php"><i class="fa fa-user" aria-hidden="true"></i></a>
+          <?php
+            if(isset($_SESSION["username"])){
+              echo '<a href="../loginsystem/logout.php"><i class="fa fa-user" aria-hidden="true"></i></a>';
+              echo $_SESSION["username"];
+            }else{
+              echo ' <a href="../loginsystem/index.php"><i class="fa fa-user" aria-hidden="true"></i></a>';
+              echo "Login ";
+            }
+          
+          ?>
+         
       </div>
         <nav>
           <li><a id="tours-link" href="#tours">Impressions</a></li>
@@ -25,7 +35,6 @@ session_start();
           <li><a target="_blank" href="../Covid_guide/ilovepdf_merged (4).pdf">Guidlines_covid</a></li>
           <li><a href="../Attraction/attraction.php">Attraction</a></li>
           <li><a href="#">comparison</a></li>
-          <li><a href="#">Bookings</a></li>
           <li><a href="#">About Us</a></li>
         </nav>
       </header>

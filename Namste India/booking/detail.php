@@ -1,7 +1,8 @@
 <?php
     session_start();
     if (!isset($_SESSION['username'])) {
-        header("Location: ../loginsystem/index..php");
+        
+        header("Location: ../loginsystem/index.php");
     }
 ?>
 <!DOCTYPE html>
@@ -11,6 +12,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+   
+   body{
+       text-align:center;
+       background:url(bg.jpg);
+   }
+   .form{
+       margin-top:10%;
+   }
+   .cls{
+       margin-top:10%;
+       margin-left: 33%;
+   }
+   .buton{
+       width: 50%;
+       background-color:  antiquewhite;
+       border: 2px solid rgb(228, 149, 149);
+       color: black;
+       padding: 15px 32px;
+       
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius:5px;
+   }
+   .btn {
+   background-color:  rgb(228, 149, 149);
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius:5px;
+}
+</style>
 <body>
     <?php $tCount = $_GET["tour"];
         $curr = $_GET["count"]; 
@@ -32,30 +74,30 @@
             echo "DETAIL OF PERSON ".$j;
         ?>
         <br>
-        <input type="text" placeholder="First Name" name="fname"><br>
-        <input type="text" placeholder="Last Name" name="lname"><br>
-        <input type="email" placeholder="Email" name="email"><br>
-        <input type="number" placeholder="Contact" name="contact"><br>
-        <label for="gender"> Gender</label>
-        <select id="gender"name="gender">
-            <option value=disabled>--Select--</option>
-            <option value="MALE">MALE</option>
-            <option value="FEMALE">FEMALE</option>
+        <input class="buton"  type="text" placeholder="First Name" name="fname"><br>
+        <input class="buton" type="text" placeholder="Last Name" name="lname"><br>
+        <input class="buton" type="email" placeholder="Email" name="email"><br>
+        <input class="buton" type="number" placeholder="Contact" name="contact"><br>
+        <select class="buton" id="gender"name="gender">
+            <option class="buton" value=disabled>--Select Gender--</option>
+            <option class="buton" value="MALE">MALE</option>
+            <option class="buton" value="FEMALE">FEMALE</option>
         </select><br>
-        <input type="text" placeholder="DOB (yyyy-mm-dd)" name="dob" ><br>
-        <input type="text" placeholder="Date of Travelling  (yyyy-mm-dd)" name="dDate"><br>
+        <input class="buton" type="text" placeholder="DOB (yyyy-mm-dd)" name="dob" ><br>
+        <input class="buton" type="text" placeholder="Date of Travelling  (yyyy-mm-dd)" name="dDate"><br>
         
-        <input type="text" placeholder="ID (adhar/passport)" name="ID"><br>
-        <label for="file2">Upload COVID report latest by 1 week</label>
-        <input id = "file2" type="file" name="file"><br>
+        <input class="buton" type="text" placeholder="ID (adhar/passport)" name="ID"><br>
+        <label class="buton" for="file2">Upload COVID report latest by 1 week</label>
+        <input class="buton" id = "file2" type="file" name="file"><br>
+        <input type="checkbox" value ="0" >
         <?php
             if($j == $tCount){
                 ?>
-                <button type="submit" name="submit">PAY NOW</button>
+                <button class="btn"  type="submit" name="submit">PAY NOW</button>
                 <?php
             }else{
                 ?>
-                 <button type="submit" name="submit">NEXT</button>
+                 <button class="btn"  type="submit" name="submit">NEXT</button>
                 <?php
             }
         }
