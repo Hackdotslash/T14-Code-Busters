@@ -1,15 +1,20 @@
 <?php
       session_start();
-	?>
+?>
 	<?php
 require('config.php');
 require_once '../dbh.inc.php';
+
 	$payId = $_GET["id"];
-
-
-	$query = mysqli_query($conn,"SELECT * FROM booked WHERE payId = '$payId'");
+	$userId = $_SESSION["uid"];
+	
+	$qu = mysqli_query($conn,"SELECT * FROM booked WHERE payId = '$payId'");
+	$r = mysqli_fetch_assoc($qu);
+	$totalPay = $r["totlaFare"] *100;
+	require_once '../config.php';
+	$query = mysqli_query($conn,"SELECT * FROM users WHERE id = '$userId'");
 	$row = mysqli_fetch_assoc($query);
-	$totalPay = $row["totlaFare"] *100;
+	$email = $row["email"];
 ?>
 <form action="<?php echo "submit.php?id=$payId"?>" method="post">
 	<script
@@ -20,7 +25,7 @@ require_once '../dbh.inc.php';
 		data-description="Pay Now"
 		data-image="https://www.logostack.com/wp-content/uploads/designers/eclipse42/small-panda-01-600x420.jpg"
 		data-currency="inr"
-		data-email="<?php echo $_SESSION['username'];?>"
+		data-email="<?php echo $email;?>"
 	>
 	</script>
 
