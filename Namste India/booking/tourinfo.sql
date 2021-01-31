@@ -9,6 +9,6 @@ CREATE TABLE tourinfo(
     dDate varchar(20) NOT NULL,
     fileCovid varchar(20) NOT NULL,
     aadharId varchar(20) NOT NULL,
-    payId varchar(20) NOT NULL,
+    payId varchar(20) NOT NULL
     
 );
