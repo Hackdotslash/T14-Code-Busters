@@ -38,10 +38,10 @@ session_start();
           but hey, it's pure CSS magic.
           -->
           <ul id="menu">
-            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../home/index.php">Home</a></li>
             <li><a href="../Covid_guide/ilovepdf_merged (4).pdf" target="_blank">Guidlines_covid</a></li>
             <li><a href="../Attraction/attraction.php">Attractions</a></li>
-            <li><a href="../contact/contact.html">About Us</a></li>
+            <li><a href="../contact/contact.php">About Us</a></li>
           </ul>
         </div>
       </nav>

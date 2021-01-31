@@ -97,7 +97,7 @@
             ?>
         </div>
       
-        <a href="yourPlan.php?state=Kerela" class="buy">MAKE YOUR OWN CUSTOMISED PLANS </a>
+        <a href="../flight_booking/flight.php" class="buy">BOOK YOUR PERSIONALISED HOTEL AND FLIGHTS </a>
         
       
 </body>

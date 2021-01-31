@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
   
-    <title>Golden Ratio</title>
+    <title>Contact Us</title>
   <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="../menuToggle.css">
  
@@ -222,7 +222,7 @@ header {
             <p>Student<br>Pursuing BTech from NIT Surat, CSE</p>
           </div><br>
           <div class="col-md-3">
-            <img src="https://images.pexels.com/photos/1006202/pexels-photo-1006202.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="imgabout img-fluid">
+            <img src="Prince.jpeg" class="imgabout img-fluid">
             <h5>Prince Nandha</h5>
             <p>Student<br>Pursuing BTech from NIT Surat, CSE</p>
           </div><br>
@@ -235,7 +235,7 @@ header {
       <center>
       <h1>CONTACT US</h1>
       <p class="subt2">We'd love to connect with you</p><br><br>
-      <form class="was-validated">
+      <form  action ="contactus.inc.php"method="POST" class="was-validated">
         <div class="form-group">
             <label for="text">Name:</label>
             <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
@@ -257,8 +257,18 @@ header {
             <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
-        <button type="submit" class="btn btn-primary" >Submit</button>
+        <button type="submit" class="btn btn-primary" name ="submit" >Submit</button>
       </form>
+      <?php
+          if(isset($_GET["error"])){
+            if($_GET["error"]== "stmtfailed1"){
+              echo '<p style="color:red">Oops! Something went wrong</p>';
+            }
+            if($_GET["error"]== "none"){
+              echo '<p style="color:green">Successfully submitted</p>';
+            }
+          }
+      ?>
     </center>
     </div>
   </div>
