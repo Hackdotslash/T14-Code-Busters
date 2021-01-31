@@ -2,7 +2,7 @@
     session_start();
 
     
-        $username ="Prince";
+        $username =$_SESSION['username'];
         require_once './dbh.inc.php';
         $veh = $_GET["vehicle"];
         $hotel = $_GET["hotel"];
