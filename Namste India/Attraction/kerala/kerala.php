@@ -65,6 +65,8 @@
             <li><a href="#">Bihar</a></li>
             <li><a href="#">Punjab</a></li>
             <li><a href="#">West Bengal</a></li>
+            <li><a href="#">Bihar</a></li>
+            <li><a href="#">Punjab</a></li>
 
             </ul>
         </header>
