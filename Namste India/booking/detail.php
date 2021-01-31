@@ -1,8 +1,8 @@
 <?php
     session_start();
-    // if (!isset($_SESSION['username'])) {
-    //     header("Location: ../loginsystem/index..php");
-    // }
+    if (!isset($_SESSION['username'])) {
+        header("Location: ../loginsystem/index..php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
