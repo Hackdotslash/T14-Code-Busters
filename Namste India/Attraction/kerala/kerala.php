@@ -61,9 +61,7 @@
             <li><a href="#">Bihar</a></li>
             <li><a href="#">Punjab</a></li>
             <li><a href="#">West Bengal</a></li>
-            <li><a href="#">Rajasthan</a></li>
-            <li><a href="#">Sikkim</a></li>
-            
+
             </ul>
         </header>
         <div class="quote-box">
