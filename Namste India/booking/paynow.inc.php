@@ -12,9 +12,9 @@
         
         $total = (($day*2000)+($veh+$hotel)*1000)*$TouristCount;
         $date = date('y-m-d');
-        
+        $bookId =uniqid();
 
-        $sql =  "INSERT INTO  booked (username, states, vehChoose, hotelChoose, totalDays , totalFare, dateBook) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql =  "INSERT INTO  booked (uniqid, username, states, vehChoose, hotelChoose, totalDays , totalFare, dateBook) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)){
