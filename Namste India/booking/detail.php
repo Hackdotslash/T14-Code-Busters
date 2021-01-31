@@ -13,7 +13,9 @@
     <title>Document</title>
 </head>
 <style>
-   
+   .check{
+       color:white;
+   }
    body{
        text-align:center;
        background:url(bg.jpg);
@@ -89,21 +91,29 @@
         <input class="buton" type="text" placeholder="ID (adhar/passport)" name="ID"><br>
         <label class="buton" for="file2">Upload COVID report latest by 1 week</label>
         <input class="buton" id = "file2" type="file" name="file"><br>
-        <input type="checkbox" value ="0" >
+        <input class="check buton" type="checkbox" value ="1" id="rules" >I have read and agree <a target="_blank" href ="../Covid_guideC/ilovepdf_merged (4).pdf" >COVID-19 GUIDELINES</a><br>
         <?php
             if($j == $tCount){
                 ?>
-                <button class="btn"  type="submit" name="submit">PAY NOW</button>
+                <button class="btn" onclick="read()" type="submit" name="submit">PAY NOW</button>
                 <?php
             }else{
                 ?>
-                 <button class="btn"  type="submit" name="submit">NEXT</button>
+                 <button class="btn"  type="submit" onclick="read()" name="submit">NEXT</button>
                 <?php
             }
         }
         ?>
 
 </form>
+<script>
+    function read(){
+        var rules = document.getElementById('rules');
+        if((typeof rules !== "undefined" && rules.value == '')){
+            alert('You need to abide by the given rules.');
+        }
+    }
+</script>
     
 </body>
 </html>

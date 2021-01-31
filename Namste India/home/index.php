@@ -33,8 +33,9 @@ session_start();
           <li><a id="tours-link" href="#tours">Impressions</a></li>
           <li><a href="#packages">Tours</a></li>
           <li><a target="_blank" href="../Covid_guide/ilovepdf_merged (4).pdf">Guidlines_covid</a></li>
-          <li><a href="../Attraction/attraction.php">Attraction</a></li>
-          <li><a href="#">comparison</a></li>
+          <li><a href="../Attraction/attraction.php">Attractions</a></li>
+          <li><a href="../flight_booking/flight.php"></a>Book Your Flight</li>
+          <li><a href="../covidFeedback/index.php">comparison</a></li>
           <li><a href="#">About Us</a></li>
         </nav>
       </header>
@@ -44,7 +45,7 @@ session_start();
         <div class="hero-content">
           <h1>Welcome to the India!</h1>
           <h3>There are many beautiful tourist places in India which are rugged and barren, and there are places which are blessed with lush greenery and amazing forests!</h3>
-          <a href="#" class="btn">Bookings</a>
+          <a href="../Attraction/attraction.php" class="btn">Attractions</a>
         </div>
       </section>
       
@@ -94,7 +95,7 @@ session_start();
       </section>
       
       <section id="contact">
-        <h3 class="title" href="#packages">About Us</h3>
+        <h3 class="title" >About Us</h3>
         <p>We will comfort you with the best and memorable experience of your life.Plan a honeymoon, a weekend getaway, or an adventure activity. Select from an array of domestic and international destinations well-suited to every spectrum of traveller. Be it flights, hotels, pre-planned itinerary, transport upon arrival/departure or sightseeing - you are covered. Attractive pricing, well-researched itineraries.</p>
         
       </section>
