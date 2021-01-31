@@ -38,6 +38,7 @@
             <li><a href="../home/index.php">Home</a></li>
             <li><a href="../Covid_guide/ilovepdf_merged (4).pdf" target="_blank">Guidlines_covid</a></li>
             <li><a href="../covidFeedback/index.php">comparison</a></li>
+            <li><a href="../flight_booking/flight.php">Book Your Flight</a></li>
             <li><a href="../contact/contact.php">About Us</a></li>
           </ul>
         </div>
@@ -57,7 +58,7 @@
         <div class="card">
             <div class="content">
                 <h2 class="title">Goa</h2>
-                <p class="copy">The Andaman and Nicobar Islands,  572 of them islands of which 38 are of the Bay of Bengal and the Andaman Sea.</p><a href="../Attraction/andaman/andaman.php?state=Goa" target="_blank"><button class="btn">Explore</button></a>
+                <p class="copy">The Andaman and Nicobar Islands,  572 of them islands of which 38 are of the Bay of Bengal and the Andaman Sea.</p><a href="../Attraction/goa/ana.php?state=Goa" target="_blank"><button class="btn">Explore</button></a>
             </div>
         </div>
         <div class="card">

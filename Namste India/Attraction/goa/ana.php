@@ -1,6 +1,5 @@
 <?php
-session_start();
-?>
+session_start();?>
 <!DOCTYPE html>
 <html lang="en">
   <head> 
@@ -60,10 +59,7 @@ session_start();
       <li><a href="#">Goa</a></li>
       <li><a href="#">Tamil nadu</a></li>
       <li><a href="#">Bihar</a></li>
-      <li><a href="#">Punjab</a></li>
-      <li><a href="#">West Bengal</a></li>
-      <li><a href="#">Assam</a></li>
-      <li><a href="#">Delhi</a></li>
+      
 
       </ul>
   </header>

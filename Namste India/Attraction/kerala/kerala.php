@@ -55,7 +55,7 @@
                 <!-- NAVIGATION BAR -->
         <header class="header">
             <ul class="menu">
-            <li><a class="active" href="#">Goa</a></li>
+            <li><a href="../goa/ana.php">Goa</a></li>
             <li><a href="#">Tamil nadu</a></li>
             <li><a href="#">Assam</a></li>
             <li><a href="#">Delhi</a></li>
@@ -63,10 +63,7 @@
             <li><a href="#">Goa</a></li>
             <li><a href="#">Tamil nadu</a></li>
             <li><a href="#">Bihar</a></li>
-            <li><a href="#">Punjab</a></li>
-            <li><a href="#">West Bengal</a></li>
-            <li><a href="#">Bihar</a></li>
-            <li><a href="#">Punjab</a></li>
+           
 
             </ul>
         </header>
