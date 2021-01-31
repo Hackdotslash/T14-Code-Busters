@@ -91,7 +91,7 @@
         <input class="buton" type="text" placeholder="ID (adhar/passport)" name="ID"><br>
         <label class="buton" for="file2">Upload COVID report latest by 1 week</label>
         <input class="buton" id = "file2" type="file" name="file"><br>
-        <input class="check buton" type="checkbox" value ="1" id="rules" >I have read and agree <a target="_blank" href ="../Covid_guideC/ilovepdf_merged (4).pdf" >COVID-19 GUIDELINES</a><br>
+        <input class="check buton" type="checkbox" value ="1" id="rules" >I have read and agree <a target="_blank" href ="../Covid_guide/ilovepdf_merged (4).pdf" >COVID-19 GUIDELINES</a><br>
         <?php
             if($j == $tCount){
                 ?>
