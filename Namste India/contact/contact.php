@@ -194,12 +194,11 @@ header {
           but hey, it's pure CSS magic.
           -->
           <ul id="menu">
-            <li><a href="../home/index.html">Home</a></li>
-            <li><a href="../Attraction/attraction.html">Attraction</a></li>
+            <li><a href="../home/index.php">Home</a></li>
+            <li><a href="../Attraction/attraction.php">Attractions</a></li>
 
             <li><a href="../Covid_guide/ilovepdf_merged (4).pdf" target="_blank">Guidlines_covid</a></li>
-            <li><a href="#">comparison</a></li>
-            <li><a href="#">Bookings</a></li>
+            <li><a href="../covidFeedback.php">comparison</a></li>
           </ul>
         </div>
       </nav>
